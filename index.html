@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Koulen font -->
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- Added logo image -->
+            <img src="images/logo.png" alt="Logo">
+            <div class="logo-text">
+                <!-- Updated text for logo to be one word per line -->
+                <h1>PRODUCT</h1>
+                <h1>COMPARISON</h1>
+            </div>
+
+        </div>
+        <div class="theme-profile">
+            <div class="theme">
+                <div class="theme-text">Theme</div>
+            </div>
+
+            <div class="profile">
+                <img src="images/profile.png" alt="Profile">
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Centering the content -->
+        <div class="content">
+            <div class="notes">
+                <p><strong>Notes:</strong></p>
+                <p>Please enter the keywords to start the comparison.<br>
+                    Please use commas to separate each product, such as:<br>
+                    product 1, product 2, product 3, etc.
+                </p>
+
+            </div>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Apple MacBook Air M2, Microsoft Surface, etc.">
+                <button onclick="compareProducts()">
+                    <!-- Updated image path -->
+                    <img src="images/search.png" alt="Search">
+                    COMPARE
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
