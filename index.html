@@ -27,7 +27,7 @@
         <!-- Added a new div for the current date and time -->
         <div class="current-time" id="current-time"></div>
         <div class="theme-profile">
-            <div class="theme">
+            <div class="theme" id="theme" onclick="changeTheme()">
                 <div class="theme-text">
                     <p>Theme</p>
                 </div>
@@ -40,8 +40,16 @@
     </header>
     <div id="dropdown-menu" class="dropdown-menu">
         <div class="dropdown-item">Profile</div>
-        <div class="dropdown-item">Support</div>
+        <div class="dropdown-item" onclick="showSupport()">Support</div>
     </div>
+
+    <div id="support-window" class="support-window">
+        <div class="support-content">
+            <span class="close" onclick="closeSupport()">&times;</span>
+            <p>Please send email to the support team: xxx@gmail.com</p>
+        </div>
+    </div>
+
     <main>
         <!-- Centering the content -->
         <div class="content">
