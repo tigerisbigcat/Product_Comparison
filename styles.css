@@ -82,12 +82,37 @@ header {
     padding-right: 20px;
     padding-left: 30px;
 }
+.profile #profile-pic:hover {
+    cursor: pointer;
+}
 
 .current-time {
     font-size: 1.4vw; 
     font-family: 'News Cycle', sans-serif;
     color: #5b5a5a; 
 }
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px; /* Adjust according to the header height */
+    right: 20px; /* Adjust according to your design */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
 
 main {
     display: flex;
