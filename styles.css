@@ -10,12 +10,15 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #b3c7e6;
+    padding: 10px 10px;
+    height: 30px;
 }
 
-.logo {
+.logo, .theme {
     display: flex;
     align-items: center;
-    padding-right: 10px;
+    height: 50px;
+    margin: 12px;
 }
 
 .logo:hover {
@@ -28,55 +31,38 @@ header {
     height: auto;
     min-width: 60px;
     max-width: 65px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .logo-text {
-    margin-left: 10px;
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
-    padding: 0.2vh;
+    padding: 0.5vh;
 }
 
-.logo-text h1 {
+.logo-text p {
     font-family: 'Koulen', sans-serif;
-    font-size: 1.9vw;
+    /* font-family: 'News Cycle', sans-serif; */
+    font-size: 1.6vw;
     margin: 0;
     line-height: 1;
     color: #737272; 
 }
-/* Additional media queries for font size */
-@media (max-width: 600px) {
-    .logo-text h1, .theme-text {
-        font-size: 4vw; /* Increase font size for very small screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    .logo-text h1, .theme-text {
-        font-size: 2.5vw; /* Decrease font size for larger screens */
-    }
-}
-
-
-/* .theme span {
-    margin-right: 10px;
-    font-size: 2vw;
-    min-font-size: 14px;
-    max-font-size: 18px;
-} */
 
 .theme-profile {
     display: flex;
     align-items: center;
 }
 
-.theme-text {
-    font-size: 1.9vw;
+.theme-text p {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 1.8vw;
+    font-weight: bolder;
     color: #535151;
-    /* padding-block: 13px;
-    padding-inline: 10px; */
-    padding: 1.7vh;
+    /* padding: 1.7vh; */
+    /* margin: 0; */
+    padding-inline: 1vw;
 }
 
 .theme {
@@ -95,6 +81,12 @@ header {
     max-width: 40px;
     padding-right: 20px;
     padding-left: 30px;
+}
+
+.current-time {
+    font-size: 1.4vw; 
+    font-family: 'News Cycle', sans-serif;
+    color: #5b5a5a; 
 }
 
 main {
@@ -124,6 +116,8 @@ main {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 20vh;
+    overflow-y: auto;
 }
 
 .notes p {
@@ -187,11 +181,14 @@ footer {
     .logo img {
         width: 15vw;
     }
-    .logo-text h1 {
-        font-size: 4vw;
+    .logo-text p {
+        font-size: 2.5vw;
     }
-    .theme span {
-        font-size: 3vw;
+    .current-time {
+        font-size: 2.5vw;
+    }
+    .theme-text p {
+        font-size: 2.5vw;
     }
     .theme img {
         width: 12vw;
@@ -205,11 +202,14 @@ footer {
     .logo img {
         width: 8vw;
     }
-    .logo-text h1 {
-        font-size: 2vw;
+    .logo-text p {
+        font-size: 1.6vw;
     }
-    .theme span {
-        font-size: 1.5vw;
+    .current-time {
+        font-size: 1.4vw;
+    }
+    .theme-text p {
+        font-size: 1.6vw;
     }
     .theme img {
         width: 6vw;
